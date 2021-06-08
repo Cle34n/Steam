@@ -1,0 +1,75 @@
+@echo off
+color 4
+echo ---------------------------------------------------
+
+echo -------- - Steam activity hider - --------
+echo ---------------------------------------------------
+echo  ------------------- - @DAT- ---------------------
+echo  ------------ - Thanks for using it - ------------
+
+
+
+echo ---------------------------------------------------
+echo Step 1/7
+echo Changing to offline mode in friendslist...
+echo ---------------------------------------------------
+start steam://friends/status/offline
+ping 127.0.0.1 -n 3 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Step 2/7
+echo Opening first file...
+echo ---------------------------------------------------
+start steam://run/413851
+ping 127.0.0.1 -n 5 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Step 3/7
+echo Opening second file...
+echo ---------------------------------------------------
+start steam://run/413857
+ping 127.0.0.1 -n 5 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Step 4/7
+echo Opening third file...
+echo ---------------------------------------------------
+start steam://run/413859
+ping 127.0.0.1 -n 5 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Step 5/7
+echo Opening fourth file...
+echo ---------------------------------------------------
+start steam://run/413856
+ping 127.0.0.1 -n 7 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Step 6/7
+echo Killing Steam and file processes...
+echo ---------------------------------------------------
+ping 127.0.0.1 -n 1 >nul 2>&1
+taskkill.exe /F /IM Steam.exe
+ping 127.0.0.1 -n 1 >nul 2>&1
+taskkill.exe /F /IM html5app_steam.exe
+ping 127.0.0.1 -n 3 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Step 7/7
+echo Restarting Steam...
+echo ---------------------------------------------------
+ping 127.0.0.1 -n 1 >nul 2>&1
+start steam://url/SteamIDMyProfile
+ping 127.0.0.1 -n 5 >nul 2>&1
+echo ...
+
+echo ---------------------------------------------------
+echo Please verfiy that the history has been cleared.
+echo If not, please restart the batch file.
+pause
